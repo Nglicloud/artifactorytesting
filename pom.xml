@@ -17,7 +17,18 @@
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
   </properties>
-
+  <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>a0ajokndrkirb-artifactory-primary-0-releases</name>
+        <url>https://nexgen.jfrog.io/artifactory/mvn-local-release</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>a0ajokndrkirb-artifactory-primary-0-snapshots</name>
+        <url>https://nexgen.jfrog.io/artifactory/mvn-local-snapshot</url>
+    </snapshotRepository>
+</distributionManagement>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>

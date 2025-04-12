@@ -1,0 +1,43 @@
+version: 2.1
+
+executors:
+  default:
+    docker:
+      - image: cimg/openjdk:17.0
+    working_directory: ~/project
+
+jobs:
+  build-and-sonar:
+    executor: default
+    steps:
+      - checkout
+
+      - run:
+          name: Set up Maven cache
+          command: |
+            mkdir -p ~/.m2
+
+      - restore_cache:
+          keys:
+            - maven-{{ checksum "pom.xml" }}
+            - maven-
+
+      - run:
+          name: Build and analyze with SonarCloud
+          command: |
+            mvn verify sonar:sonar \
+              -Dsonar.projectKey=Nglicloud_artifactorytesting \
+              -Dsonar.organization=nglicloud \
+              -Dsonar.host.url=https://sonarcloud.io \
+              -Dsonar.login=${SONAR_TOKEN}
+
+      - save_cache:
+          paths:
+            - ~/.m2
+          key: maven-{{ checksum "pom.xml" }}
+
+workflows:
+  version: 2
+  build_and_analyze:
+    jobs:
+      - build-and-sonar

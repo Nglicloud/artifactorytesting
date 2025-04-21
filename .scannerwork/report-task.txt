@@ -1,0 +1,7 @@
+organization=nglicloud
+projectKey=Nglicloud_artifactorytesting
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.62212
+dashboardUrl=https://sonarcloud.io/dashboard?id=Nglicloud_artifactorytesting
+ceTaskId=AZZWKGj2ajLn1vD3WtuX
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZZWKGj2ajLn1vD3WtuX

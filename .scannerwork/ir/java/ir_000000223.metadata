@@ -1,0 +1,4 @@
+BuggyExample#getUserGreeting(Ljava/lang/String;)Ljava/lang/String;
+false
+cd079b019e9c37f635d707d6cfd31849
+java.lang.String#equals(Ljava/lang/Object;)Z

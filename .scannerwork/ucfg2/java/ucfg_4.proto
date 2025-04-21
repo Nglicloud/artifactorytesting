@@ -1,0 +1,33 @@
+
+BBuggyExample#getUserGreeting(Ljava/lang/String;)Ljava/lang/String;_
+UD:/Projects/SonarProjects/artifactorytesting/src/main/java/com/ngli/BuggyExample.java0 0(!"3*6
+22 2(,"'
+2 2(-
+Welcome, administrator!*Ý
+31 1(ÅÂ
+1 1( 
+%0boolean",java.lang.String#equals(Ljava/lang/Object;)Z*6
+
+__unknown_file (
+
+namejava.lang.String*%
+
+__unknown_file (	
+admin2equals(Ljava/lang/Object;)*
+2
+1*¦
+14 4(q
+o
+4 4(!
+%1java.lang.String"__concat*
+4 4(
+	Welcome, *&
+4 4(!
+
+namejava.lang.String"$
+4 4("
+
+%1java.lang.String:$
+0" 0(-
+namejava.lang.StringB
+BuggyExampleH

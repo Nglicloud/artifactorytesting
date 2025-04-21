@@ -1,6 +1,6 @@
 # Use a lightweight Java image
 FROM openjdk:17-jdk-slim
-
+# it is the test comment
 # Set working directory
 WORKDIR /app
 

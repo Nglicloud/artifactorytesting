@@ -1,0 +1,11 @@
+BuggyExample#main([Ljava/lang/String;)V
+false
+d640209ed8e81accec0146caa40ae2d1
+BuggyExample#<init>()V
+BuggyExample#instance-init#
+==
+getUserGreeting BuggyExample#getUserGreeting(Ljava/lang/String;)Ljava/lang/String;
+insertUser BuggyExample#insertUser(Ljava/lang/String;Ljava/lang/String;)V
+printUserDetails BuggyExample#printUserDetails([Ljava/lang/String;)V
+println java.io.PrintStream#println(Ljava/lang/String;)V
+readFile BuggyExample#readFile(Ljava/lang/String;)V

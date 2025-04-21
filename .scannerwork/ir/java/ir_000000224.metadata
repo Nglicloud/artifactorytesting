@@ -1,0 +1,5 @@
+BuggyExample#longMethodWithBadPractice()V
+false
+c30d33865006a5c123bbf4bd11daa110
+==
+println java.io.PrintStream#println(Ljava/lang/String;)V
